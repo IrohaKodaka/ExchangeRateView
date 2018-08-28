@@ -18,7 +18,7 @@ namespace ExchangeRateView
             {
                 ie.Navigate("https://moneykit.net/visitor/sb_rate/");
                 Wait(ie);
-                //DOM操作
+                //DOM操作　
                 var doc = ie.Document as mshtml.IHTMLDocument3;
                 var tmpCol = doc.getElementsByTagName("tbody") as mshtml.IHTMLElementCollection;
                 tmpCol = tmpCol.item(0).getElementsByTagName("td") as mshtml.IHTMLElementCollection;
